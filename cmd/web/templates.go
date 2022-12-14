@@ -5,6 +5,8 @@ import (
 	"path/filepath"
 )
 
+// A single structure for the data that is to be sent to html templates.
+// Here, only one variable of data is used, but more can be added if necessary.
 type templateData struct {
 	AsciiOutput string
 }

@@ -21,6 +21,7 @@ func (app *application) serverError(w http.ResponseWriter, err error) {
 	http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 }
 
+// This function finds an html template in cache and executes it.
 func (app *application) render(w http.ResponseWriter, r *http.Request, name string, td *templateData) {
 	tmpl, ok := app.templateCache[name]
 	if !ok {
