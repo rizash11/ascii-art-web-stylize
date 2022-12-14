@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/77/46/cartoon-sky-with-stars-and-clouds-vector-27947746.jpg");
+    color: LightGoldenrodYellow;
+    background-size: cover;
+}
+
+.text-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    resize: none;
+    width: 80vw;
+}
+
+.ascii-art-output {
+    display: block;
+    width: 79vw;
+    padding: 2vh;
+    margin-top: 2vh;
+    overflow: auto;
+    overflow-y: hidden;
+    background: #efefef;
+    border: 1px solid rgb(180, 180, 180);
+    background: url(lines.png) repeat 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* .buttons {
+    display: flex;
+    flex-direction: row;
+} */

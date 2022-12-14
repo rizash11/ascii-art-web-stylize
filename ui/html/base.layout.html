@@ -1,0 +1,39 @@
+{{define "base"}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-art-Web</title>
+    <link rel='stylesheet' href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Ascii-art-Web</h1>
+    <form action="/ascii-art-web" method="POST" class="text-form">
+        <label class="text-label">
+            Please provide some text to get translated to ascii-art:
+            <textarea class="text" name="rawInput" rows="10"></textarea>
+        </label>
+
+        <div class="buttons">
+            <select name="banner" id="banner">
+                <option value="standard">Standard</option>
+                <option value="shadow">Shadow</option>
+                <option value="thinkertoy">Thinkertoy</option>
+            </select>
+            
+            <button type="submit">Make ascii-art</button>
+        </div>
+    </form>
+
+    <form action="/" method="GET">
+        <button type="submit">Clear</button>
+    </form>
+   
+    {{template "ascii-art" .}}
+</body>
+</html>
+
+{{end}}
