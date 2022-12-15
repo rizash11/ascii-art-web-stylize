@@ -3,9 +3,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/77/46/cartoon-sky-with-stars-and-clouds-vector-27947746.jpg");
-    color: LightGoldenrodYellow;
-    background-size: cover;
+    background-image: url("https://img.freepik.com/free-vector/minimal-triangle-pattern-design-pastel-colors_1017-14885.jpg?w=826&t=st=1671100045~exp=1671100645~hmac=03fc9c1c633455acd127840588cd025403d855578aa4e463150faf7b376f696d");
+    color: rgb(65, 65, 17);
+    /* background-size: 30%; */
 }
 
 .text-form {
@@ -30,13 +30,13 @@ body {
     margin-top: 2vh;
     overflow: auto;
     overflow-y: hidden;
-    background: #efefef;
-    border: 1px solid rgb(180, 180, 180);
-    background: url(lines.png) repeat 0 0;
+    /* background: #efefef; */
+    border: 1px solid rgb(0, 0, 0);
+    /* background: url(lines.png) repeat 0 0; */
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
 }
 

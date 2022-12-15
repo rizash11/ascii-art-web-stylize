@@ -6,11 +6,12 @@ import (
 )
 
 // A single structure for the data that is to be sent to html templates.
-// Here, only one variable of data is used, but more can be added if necessary.
+// Here only one variable of data is used, but more can be added if necessary.
 type templateData struct {
 	AsciiOutput string
 }
 
+// Takes html files in a given directory, parses them, and stores in a map
 func newTemplateCache(dir string) (map[string]*template.Template, error) {
 	templateCache := map[string]*template.Template{}
 	pages, err := filepath.Glob(filepath.Join(dir, "*.page.html"))
